@@ -1,0 +1,64 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  padding: 2rem;
+  background-color: #000;
+  margin-top: 6%;
+  color: #fff;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.heading {
+  font-size: 2rem;
+  color: #00eaff;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.searchContainer {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.searchInput {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  border-radius: 6px;
+  border: 1px solid #00eaff;
+  background-color: #111;
+  color: #00eaff;
+  outline: none;
+}
+
+.searchButton {
+  background-color: #00eaff;
+  color: #000;
+  border: none;
+  padding: 0.5rem 1.2rem;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.searchButton:hover {
+  background-color: #00cce0;
+}
+
+.loadingText {
+  margin-top: 2rem;
+  font-size: 1.2rem;
+  color: #ccc;
+}
+
+.chartWrapper {
+  width: 100%;
+  max-width: 900px;
+  height: 400px;
+}

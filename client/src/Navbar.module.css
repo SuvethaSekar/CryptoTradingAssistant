@@ -1,0 +1,124 @@
+:root {
+  --background-color: #000;
+  --text-color: #fff;
+  --nav-background: #1e1e1e;
+  --nav-text: #fff;
+  --button-background: #00eaff;
+  --button-text: #000;
+}
+
+.dark {
+  --background-color: #121212;
+  --text-color: #ffffff;
+  --nav-background: #1e1e1e;
+  --nav-text: #ffffff;
+  --button-background: #ff9800;
+  --button-text: #000000;
+}
+
+body {
+  background: var(--background-color);
+  color: var(--text-color);
+  transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.navbar {
+  width: 100%;
+  background: #222222; /* Always black */
+  padding: 15px 0;
+  display: flex;
+  justify-content: center;
+  position: fixed; /* Changed from sticky to fixed */
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+
+.navContainer {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: var(--nav-text);
+}
+
+.navLinks {
+  list-style: none;
+  padding-top: 10px;
+  display: flex;
+  gap: 25px;
+  align-items: center;
+}
+
+.navLinks :global(a) {
+  text-decoration: none;
+  color: var(--nav-text);
+  font-size: 1rem;
+  transition: color 0.2s ease-in-out;
+}
+
+.navLinks :global(a:hover) {
+  color: var(--button-background);
+}
+
+.rightSection {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.toggleButton {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: var(--nav-text);
+  font-size: 1.2rem;
+}
+
+.loginButton {
+  background: var(--button-background);
+  color: var(--button-text);
+  border: none;
+  padding: 8px 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: 0.3s;
+}
+
+.loginButton:hover {
+  background: #00cce0;
+}
+
+.logoutButton {
+  background: var(--button-background);
+  color: var(--button-text);
+  border: none;
+  padding: 8px 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: 0.3s;
+}
+
+.logoutButton:hover {
+   background: #00cce0;
+}
+.userInfo {
+  display: flex;
+  align-items: center;
+  gap: 10px; 
+}
+.profileIcon {
+  width: 24px;
+  height: 24px;
+ color: rgb(53, 172, 211);
+}
